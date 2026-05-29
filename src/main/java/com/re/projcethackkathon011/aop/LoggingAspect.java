@@ -6,6 +6,6 @@ public class LoggingAspect {
 
     @Before("execution(* com.example.bookmanager.service.*.*(..))")
     public void logMethod(JoinPoint joinPoint) {
-        System.out.println(" Method: " + joinPoint.getSignature().getName());
+        System.out.println(" MEthod: " + joinPoint.getSignature().getName());
     }
 }
